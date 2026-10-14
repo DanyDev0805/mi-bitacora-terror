@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mi bitácora del terror</title>
+    <link rel="stylesheet" href="css/estilos.min.css">
+</head>
+<body>
+
+    <header class="encabezado">
+        <h1>Mi bitácora del terror</h1>
+        <p>Un espacio para descubrir y organizar películas de terror.</p>
+        <img src="img/portada.webp" alt="Portada de la bitácora"
+     class="portada">
+    </header>
+
+    <main class="contenedor">
+        <h2>Catálogo de películas</h2>
+
+        <label for="busqueda">Buscar una película:</label>
+        <input type="search" id="busqueda"
+               placeholder="Escribe el título...">
+
+        
+<section class="catalogo">
+
+    <article class="pelicula" data-id="halloween">
+        <h2>Halloween (1978)</h2>
+        <p>Género: Slasher</p>
+        <p>Director: John Carpenter</p>
+        <button type="button" class="boton-vista">
+            Marcar como vista
+        </button>
+    </article>
+
+    <article class="pelicula" data-id="exorcist">
+        <h2>The Exorcist (1973)</h2>
+        <p>Género: Terror sobrenatural</p>
+        <p>Director: William Friedkin</p>
+        <button type="button" class="boton-vista">
+            Marcar como vista
+        </button>
+    </article>
+
+    <article class="pelicula" data-id="scream">
+        <h2>Scream (1996)</h2>
+        <p>Género: Slasher</p>
+        <p>Director: Wes Craven</p>
+        <button type="button" class="boton-vista">
+            Marcar como vista
+        </button>
+    </article>
+
+</section>
+
+
+        <p id="sin-resultados" hidden>
+            No se encontraron películas con ese título.
+        </p>
+    </main>
+
+    <footer>
+        <p>Mi bitácora del terror - Proyecto académico UVEG</p>
+    </footer>
+
+    <script src="js/app.min.js"></script>
+</body>
+</html>

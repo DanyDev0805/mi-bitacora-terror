@@ -41,6 +41,51 @@ Para probar la aplicación durante su desarrollo:
 - `js/`: archivos JavaScript originales y minificados.
 - `img/`: imagen de portada optimizada.
 
+
+## Despliegue local con Apache
+
+Para realizar el despliegue de la aplicación utilicé
+XAMPP en Windows, que incluye el servidor web Apache.
+
+Primero preparé una carpeta con los archivos optimizados
+y generé un paquete ZIP. Después descomprimí su contenido
+en el directorio de Apache:
+
+C:\xampp\htdocs\mi-bitacora-terror
+
+Para comprobar el funcionamiento inicial, accedí a:
+
+http://localhost/mi-bitacora-terror/
+
+Posteriormente configuré un Virtual Host utilizando
+el archivo httpd-vhosts.conf.
+
+Los datos principales de la configuración fueron:
+
+- Servidor: Apache
+- Puerto: 80
+- Nombre del Virtual Host: bitacora.test
+- DocumentRoot: C:/xampp/htdocs/mi-bitacora-terror
+- Archivo principal: index.html
+
+También configuré el archivo hosts de Windows para
+asociar bitacora.test con la dirección 127.0.0.1.
+
+Finalmente, comprobé la configuración mediante los
+comandos httpd.exe -t y httpd.exe -S.
+
+Apache mostró el mensaje Syntax OK y reconoció
+correctamente el Virtual Host.
+
+La aplicación quedó disponible localmente en:
+
+http://bitacora.test/
+
 ## Estado del proyecto
 
-La aplicación se encuentra desarrollada, optimizada y empaquetada. El siguiente paso es configurar un servidor Apache para realizar las pruebas de despliegue en un entorno local.
+La aplicación se encuentra desarrollada, optimizada,
+versionada y desplegada correctamente en un servidor
+Apache local.
+
+Este despliegue corresponde a un entorno académico
+de simulación y no a un sitio publicado en Internet.
